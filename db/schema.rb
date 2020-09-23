@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2020_09_23_094847) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
+ActiveRecord::Schema.define(version: 2020_09_23_071616) do
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -30,5 +31,4 @@ ActiveRecord::Schema.define(version: 2020_09_23_094847) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
-
 end
